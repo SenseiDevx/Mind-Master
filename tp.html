@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Term Project - Plays Mastermind</title>
+    <style>
+        body {
+            font-family: "Courier New", monospace;
+            font-size: 120%;
+            font-weight: bold;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        input[type="button"] {
+            padding: 5px 10px;
+        }
+    </style>
+    <script src="tp.js"></script> <!-- Внешний JS файл -->
+</head>
+<body onload="initialize();">
+<h1>Term Project - Plays Mastermind</h1>
+<form name="gameForm">
+    <table>
+        <tr>
+            <td colspan="2">
+                <p>Click on one of six colors to select, then click on an Answer Box to set it, and click "Check Answer" button.</p>
+                <p>
+                    <input type="button" value="Check Answer" onclick="checkAnswer();">
+                    <input type="button" value="Help" onclick="showHelp();">
+                    <input type="button" value="Restart Game" onclick="newGame();">
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td><img src="TermProjectResources/RedRectangle.GIF" onclick="selectedColor('red');" alt="Red"></td>
+                        <td><img src="TermProjectResources/BlueRectangle.GIF" onclick="selectedColor('blue');" alt="Blue"></td>
+                        <td><img src="TermProjectResources/GreenRectangle.GIF" onclick="selectedColor('green');" alt="Green"></td>
+                        <td><img src="TermProjectResources/YellowRectangle.GIF" onclick="selectedColor('yellow');" alt="Yellow"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="TermProjectResources/WhiteRectangle.GIF" onclick="selectedColor('white');" alt="White"></td>
+                        <td><img src="TermProjectResources/PurpleRectangle.GIF" onclick="selectedColor('purple');" alt="Purple"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="TermProjectResources/QuestionRectangle.GIF" onclick="pasteColor('box1');" id="box1"></td>
+            <td><img src="TermProjectResources/QuestionRectangle.GIF" onclick="pasteColor('box2');" id="box2"></td>
+            <td><img src="TermProjectResources/QuestionRectangle.GIF" onclick="pasteColor('box3');" id="box3"></td>
+            <td><img src="TermProjectResources/QuestionRectangle.GIF" onclick="pasteColor('box4');" id="box4"></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p id="status">Game Status: Playing</p>
+                <p id="gameMessage"></p>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

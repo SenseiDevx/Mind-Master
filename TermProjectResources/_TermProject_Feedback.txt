@@ -1,0 +1,34 @@
+Term Project Feedback
+
+Points								Earned	Max
+
+ 1. External "js" file used.					 __4__  4    
+ 2. Each function has at least one comment describing 
+    what's happening.						 __2__  2
+ 3. The version of browser will display images. 
+    If not, warn user with informational message below.		 __2__  2
+ 4. Display what is happening in a status area at bottom.	 __4__  4
+ 5. Help button displays the resource userhelp.htm correctly.	 __4__  4
+ 6. Resource's GIF files display the six colors correctly.	 __4__  4
+ 7. Previous guess is checked against current guess
+    if matches current guess - tell user.			 __2__  2
+ 8. Restart correctly restarts the game.
+    Ensure the win/loss messages are correct.			 __4__  4
+ 9) Variables and arrays that you need to keep track 
+    of game information. Each one has a comment describing
+    what it's purpose is for.					 __4__  4
+10) Functions required (at least 6 used)			 __4__  4
+11) Program starts up correctly.				 __2__  2
+12) Program selects and pastes the the correct colors.		 __2__  2
+13) Program checks for previous guesses.			 __4__	4
+13) Program correctly shows user's guesses and clues.		 __6__  6
+16) Program uses Cookies.					 __2__  2
+17) Optional: uses JSON and localStorage to save/restore game    ____  (+5)
+
+Late								 ____  -10
+  
+Total								 ____	50
+
+
+Comments to developer:
+
